@@ -16,8 +16,7 @@ body{
 
 header{
     background-color: #182C61;
-    padding: 20px;
-    max-height: fit-content;
+    padding: 20px 0;
 }
 
 header h1{
@@ -25,13 +24,14 @@ header h1{
     font-size: 40px;
 }
 
-.container{
+.container-head{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 1em 1em;
 }
 
-.container a{
+.container-head a{
     font-size: 18px;
     text-decoration: none;
     color: white;
@@ -39,11 +39,9 @@ header h1{
     border-radius: 10px;
 }
 
-.container a:hover{
+.container-head a:hover{
     transition: 0.4s;
     background-color: rgba(0, 0, 0, 0.296);
-    
-    
 }
 
 ul {
@@ -55,3 +53,107 @@ li{
     display: inline;
     margin-left: 1.5em ;
 }
+
+#container1{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 2em;
+    gap: 3%;
+}
+
+img{
+    max-width: 100%;
+}
+
+#style-image-street{
+    border: 1px solid black;
+}
+
+#about{
+    max-width: 30%;
+}
+
+#about h2{
+    color: #182C61;
+    font-size: 2em;
+}
+
+#about p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    padding: 0;
+    max-width: 280px;
+}
+
+#logo-list li {
+    margin: 0 0 0 5px;
+    flex: 1;
+}
+
+#playstation{
+    max-height: 45%;
+    object-fit: contain;
+}
+
+#container-c{
+    max-width: 40%;
+    text-align: center;
+}
+
+#contato{
+    padding: 10px;
+}
+
+#contato h2{
+    text-align: left;
+    color: #182C61;
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+#contato h3{
+    text-align: left;
+    color: #182C61;
+    font-size: 1.2em;
+}
+
+#botoes{
+    background-color: #182C61;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 0;
+    line-height: 30px;
+}
+
+#botoes li{
+    margin: 0;
+}
+
+.botoes-p{
+    font-size: 1em;
+    font-family: Helvetica, sans-serif;
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#botao-g{
+    height: 140px;
+    padding: 0 0 90px 10px;
+}
+
+#enviar{
+    padding: 10px;
+    font-family: "Bungee", Arial, Helvetica, sans-serif; 
+    margin-top: 10px;
+    width: 80%;
+    border-radius: 20px;
+}
+
