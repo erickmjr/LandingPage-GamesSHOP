@@ -23,33 +23,52 @@
             <div id="image-street">
                 <img id="style-image-street" src="images/loja.jpg" alt="Loja Games Shop">
             </div>
-            <article id="about">
+            <section id="about">
                 <h2>sobre a loja</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis numquam vel hic tempore quisquam, qui vitae tempora, architecto amet, nostrum sunt
                 recusandae? Eos, perferendis ipsam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet aliquid totam explicabo ex nam inventore nisi. Repellat explicabo </p>
 
-                <ul id="logo-list">
+                <ul class="logo-list">
                     <li><img class="logo" src="images/nintendo.png" alt="Logo Nintendo"></li>
                     <li><img class="logo" src="images/xbox.png" alt="Logo Xbox"></li>
                     <li><img class="logo" id="playstation" src="images/playstation.png" alt="Logo Playstation"></li>
                 </ul>
-            </article>
+            </section>
             
         </div>
     </main>
 
-    <div id="container-c">
-        <article id="contato">
-            <h2>CONTATO</h2>
-            <h3>FALE CONOSCO</h3>
-            <ul id="botoes">
-                <li><input type="text" placeholder="Nome..." class="botoes-p"></li> <br>
-                <li><input type="email" placeholder="E-mail..." class="botoes-p"></li> <br>
-                <li><input type="tel" placeholder="Telefone (opcional)" class="botoes-p"></li> <br>
-                <li><input type="text" placeholder="Sua mensagem..." id="botao-g" class="botoes-p"></li>
-            </ul>
-            <button type="submit" id="enviar">ENVIAR</button>
-        </article>
+    <div id="container-inferior">
+        <div id="container-lside">
+            <section id="contato">
+                <h2>CONTATO</h2>
+                <h3>FALE CONOSCO</h3>
+                <form id="botoes">
+                    <input type="text" placeholder="Nome..." class="botoes-p" required> <br>
+                    <input type="email" placeholder="E-mail..." class="botoes-p" required> <br>
+                    <input type="tel" placeholder="Telefone (opcional)" class="botoes-p" required> <br>
+                    <input type="text" placeholder="Sua mensagem..." id="botao-g" class="botoes-p" required>
+                    <button type="submit" id="enviar">ENVIAR</button>
+                </form>
+            </section>
+        </div>
+        <div id="container-rside">
+            <section>
+                <h3>Nos acompanhe</h3>
+                <ul class="logo-list2">
+                    <li><img class="logo" src="images/instagram.png" alt="instagram" class="logo-inf"></li>
+                    <li><img class="logo" src="images/facebook.png" alt="Facebook" class="logo-inf"></li>
+                    <li><img class="logo" src="images/youtube.png" alt="Youtube" class="logo-inf"></li>
+                </ul>
+            </section>
+            <section id="address">
+                <h3>VENHA ATÉ NÓS!</h3>
+                <p>Rua JavaScript n° 124, Vila HTML - São Paulo - SP</p>
+            </section>
+        </div>
+
+            
     </div>
+    <footer>&copy;Games Shop - Todos os direitos reservados - 2022</footer>
 </body>
 </html>

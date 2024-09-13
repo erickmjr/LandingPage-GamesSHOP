@@ -21,7 +21,7 @@ header{
 
 header h1{
     color: white;
-    font-size: 40px;
+    font-size: clamp(20px, 5vw, 50px);
 }
 
 .container-head{
@@ -32,11 +32,12 @@ header h1{
 }
 
 .container-head a{
-    font-size: 18px;
+    font-size: clamp(12px, 2.5vw, 26px);
     text-decoration: none;
     color: white;
     padding: 8px;
     border-radius: 10px;
+    margin-left: 1vw;
 }
 
 .container-head a:hover{
@@ -46,19 +47,17 @@ header h1{
 
 ul {
     list-style-type: none;
-    
 }
 
 li{
     display: inline;
-    margin-left: 1.5em ;
 }
 
 #container1{
     display: flex;
-    justify-content: space-around;
     padding: 1em 2em;
-    gap: 3%;
+    gap: 3vw;
+    justify-content: center;
 }
 
 img{
@@ -75,23 +74,23 @@ img{
 
 #about h2{
     color: #182C61;
-    font-size: 2em;
+    font-size: clamp(16px, 3vw, 28px);
 }
 
 #about p{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#logo-list{
+.logo-list{
     display: flex;
     justify-content: space-between;
     margin-top: 8px;
     padding: 0;
-    max-width: 280px;
+    max-width: 30vw;
 }
 
-#logo-list li {
-    margin: 0 0 0 5px;
+.logo-list li {
+    margin-left: 1vw;
     flex: 1;
 }
 
@@ -100,53 +99,53 @@ img{
     object-fit: contain;
 }
 
-#container-c{
-    max-width: 40%;
-    text-align: center;
+#container-inferior{
+    max-width: 100%;
+    padding-left: 2vw;
+    padding-bottom: 1vw;
+    display: flex;
+    margin-top: 4vw;
+    gap: 10vw;
 }
 
 #contato{
-    padding: 10px;
+    padding-left: 10px;
+    text-align: center;
 }
 
 #contato h2{
     text-align: left;
     color: #182C61;
-    font-size: 2.5em;
-    margin: 20px 0;
+    font-size: clamp(30px, 4vw, 48px);
 }
 
-#contato h3{
+#contato h3, #container-rside h3{
     text-align: left;
     color: #182C61;
-    font-size: 1.2em;
+    font-size: clamp(20px, 2vw, 36px);
 }
 
 #botoes{
-    background-color: #182C61;
-    max-width: 100%;
-    padding: 20px;
-    border-radius: 15px;
+    width: 50vw;
+    padding: 10px 0 10px 10px;
     margin: 0;
     line-height: 30px;
 }
 
-#botoes li{
-    margin: 0;
-}
 
 .botoes-p{
     font-size: 1em;
     font-family: Helvetica, sans-serif;
     padding: 10px;
     margin-bottom: 5px;
-    width: 80%;
+    width: 100%;
     border-radius: 10px;
 }
 
 #botao-g{
     height: 140px;
     padding: 0 0 90px 10px;
+    width: 100%;
 }
 
 #enviar{
@@ -157,3 +156,29 @@ img{
     border-radius: 20px;
 }
 
+#container-rside{
+    margin-top: 3vw;
+    max-width: 33%;
+    
+}
+
+.logo-list2{
+    display: flex;
+    margin-top: 8px;
+    padding: 0;
+    gap: 1vw;
+    width: 15vw;
+    align-items: center;
+}
+
+
+#address{
+    margin-top: 3vw;
+    max-width: 35vw;
+}
+
+footer{color: white;
+    background-color: #182C61;
+    text-align: center;
+    padding: 20px;
+}
